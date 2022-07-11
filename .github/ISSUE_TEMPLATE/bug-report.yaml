@@ -1,0 +1,55 @@
+name: Bug Report
+description: Report a bug encountered
+labels: type/bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Please provide as much info as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: How can we reproduce it?
+    validations:
+      required: true
+
+  - type: input
+    id: subscription-id
+    attributes:
+      label: What is the subscription ID(if you have)?
+      description: You can get it on the solution details page.
+
+  - type: input
+    id: solution-id
+    attributes:
+      label: What is the solution ID(if you have)?
+      description: You can get it from the url address of the solution details page.
+
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      description: Which service of our software are you running?
+      options:
+        - Cloud
+        - Explorer
+        - Dashboard
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Anything else we need to know?
